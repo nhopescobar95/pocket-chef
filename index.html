@@ -1,13 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pocket-chef-app</title>
+    <title>Pocket Chef</title>
   </head>
   <body>
+    <!-- Este es el contenedor principal donde se carga la aplicación de React -->
     <div id="root"></div>
+    
+    <!-- FIX CRÍTICO: Usar una ruta relativa (./) en lugar de la absoluta (/) 
+         para que Netlify pueda encontrar el archivo de inicio después de la compilación. 
+         Esto soluciona el problema de la pantalla en blanco. -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
