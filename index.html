@@ -9,9 +9,9 @@
     <!-- Este es el contenedor principal donde se carga la aplicación de React -->
     <div id="root"></div>
     
-    <!-- FIX CRÍTICO: Usar una ruta relativa (./) en lugar de la absoluta (/) 
-         para que Netlify pueda encontrar el archivo de inicio después de la compilación. 
-         Esto soluciona el problema de la pantalla en blanco. -->
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- FIX CRÍTICO FINAL: La ruta debe ser relativa (./) para que el servidor 
+         encuentre el archivo de arranque dentro de la misma carpeta, 
+         solucionando el problema de la pantalla en blanco en Netlify. -->
+    <script type="module" src="./src/main.jsx"></script>
   </body>
 </html>
